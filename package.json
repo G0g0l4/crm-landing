@@ -1,0 +1,18 @@
+{
+  "name": "markup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/css/index.scss dist/css/index.css",
+    "sass:watch": "sass --watch src/css/index.scss:dist/css/index.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.77.8"
+  }
+}

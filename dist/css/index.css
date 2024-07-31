@@ -11905,7 +11905,7 @@ header .navbar {
   margin-bottom: 20px;
 }
 header .navbar .navbar-brand {
-  width: 60px;
+  width: 130px;
   height: 60px;
   border-radius: 18px;
   margin-right: 50px;
@@ -12344,12 +12344,12 @@ footer .copyright {
 }
 
 .scrollable-content {
-  height: 495px;
+  height: 420px;
   width: 100%;
   padding: 0 10px;
 }
 .scrollable-content .carousel {
-  height: 495px;
+  height: 420px;
 }
 .scrollable-content .carousel .carousel-inner {
   height: 100%;
@@ -12368,15 +12368,6 @@ footer .copyright {
   flex-direction: column;
   align-items: flex-start;
 }
-.scrollable-content .content .left .title {
-  width: 100%;
-  font-family: Roboto, serif;
-  font-size: 28px;
-  font-weight: 800;
-  line-height: 30px;
-  text-align: center;
-  margin-bottom: 20px;
-}
 .scrollable-content .content .left .description {
   margin-bottom: 25px;
   width: 100%;
@@ -12387,7 +12378,7 @@ footer .copyright {
   font-weight: 800;
   line-height: 30px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .scrollable-content .content .left .description p {
   font-family: Montserrat, serif;
@@ -12578,12 +12569,6 @@ footer .copyright {
     grid-template-columns: 1fr 1fr;
     column-gap: 40px;
   }
-  .scrollable-content .content .left .title {
-    font-size: 40px;
-    line-height: 45px;
-    text-align: left;
-    margin-bottom: 30px;
-  }
   .scrollable-content .content .left .description {
     margin-bottom: 30px;
   }
@@ -12591,6 +12576,7 @@ footer .copyright {
     font-size: 40px;
     line-height: 45px;
     text-align: left;
+    margin-bottom: 40px;
   }
   .scrollable-content .content .left .description p {
     font-size: 18px;

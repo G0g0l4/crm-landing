@@ -179,7 +179,11 @@
   }
 
   .scrollable-content {
-    max-height: 400px;
+    height: 430px;
+
+    .carousel {
+      height: 430px;
+    }
 
     .content {
       grid-template-columns: 1fr 1fr;
@@ -190,11 +194,11 @@
           font-size: 40px;
           line-height: 45px;
           text-align: left;
-          margin-bottom: 60px;
+          margin-bottom: 30px;
         }
 
         .description {
-          margin-bottom: 60px;
+          margin-bottom: 30px;
 
           .title {
             font-size: 40px;
@@ -213,6 +217,8 @@
           display: unset;
           width: unset;
           margin-bottom: unset;
+          margin-left: unset;
+          margin-right: unset;
         }
       }
 
@@ -281,7 +287,7 @@
   }
 
   .scrollable-content {
-    max-height: 370px;
+    //max-height: 370px;
   }
 
   #highlights {

@@ -12373,8 +12373,19 @@ footer .links-wrapper .links .link:not(:last-child) {
   line-height: 26px;
   text-align: left;
   color: #C9D8D5;
-  transition: all 0.3s;
+  animation: lightUp 2s infinite alternate;
   cursor: pointer;
+}
+@keyframes lightUp {
+  0% {
+    color: #C9D8D5;
+  }
+  50% {
+    color: #FFFFFF;
+  }
+  100% {
+    color: #C9D8D5;
+  }
 }
 #instruments .instruments-wrapper .description .instruments .instrument:not(:last-child) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1803921569);
@@ -12382,9 +12393,6 @@ footer .links-wrapper .links .link:not(:last-child) {
 }
 #instruments .instruments-wrapper .description .instruments .instrument:not(:first-child) {
   padding-top: 8px;
-}
-#instruments .instruments-wrapper .description .instruments .instrument:hover {
-  color: #FFFFFF;
 }
 #instruments .instruments-wrapper .image {
   width: 100%;
@@ -12394,23 +12402,29 @@ footer .links-wrapper .links .link:not(:last-child) {
   height: 100%;
 }
 
+.prices-wrapper {
+  margin-bottom: 50px;
+}
+
 .scrollable-content {
-  display: flex;
-  flex-direction: column;
+  height: 495px;
   width: 100%;
-  max-height: 486px;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
   padding: 0 10px;
+}
+.scrollable-content .carousel {
+  height: 495px;
+}
+.scrollable-content .carousel .carousel-inner {
+  height: 100%;
+}
+.scrollable-content .carousel .carousel-inner .carousel-item {
+  height: 100%;
 }
 .scrollable-content .content {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
   scroll-snap-align: start;
-}
-.scrollable-content .content:not(:last-child) {
-  margin-bottom: 30px;
 }
 .scrollable-content .content .left {
   display: flex;
@@ -12428,6 +12442,7 @@ footer .links-wrapper .links .link:not(:last-child) {
 }
 .scrollable-content .content .left .description {
   margin-bottom: 25px;
+  width: 100%;
 }
 .scrollable-content .content .left .description .title {
   font-family: Roboto, serif;
@@ -12448,8 +12463,9 @@ footer .links-wrapper .links .link:not(:last-child) {
 }
 .scrollable-content .content .left .main-button {
   display: block;
-  width: 100%;
   margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .scrollable-content .content .right {
   width: 100%;
@@ -12461,6 +12477,67 @@ footer .links-wrapper .links .link:not(:last-child) {
 .scrollable-content .content .right img {
   width: 100%;
   height: 100%;
+}
+.scrollable-content .text-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+.scrollable-content .text-slide p {
+  font-family: Roboto, serif;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 800;
+  text-align: center;
+  color: var(--main-green);
+}
+.scrollable-content .text-slide .scroll-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--main-green);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scrollable-content .text-slide .scroll-icon svg {
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.carousel .carousel-indicators {
+  margin-bottom: 0;
+}
+.carousel .carousel-indicators button {
+  background-color: var(--main-green);
+}
+
+#prices {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#prices .custom-price {
+  font-family: Montserrat, serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 25px;
 }
 
 @media (min-width: 768px) {
@@ -12599,7 +12676,10 @@ footer .links-wrapper .links .link:not(:last-child) {
     margin-bottom: unset;
   }
   .scrollable-content {
-    max-height: 400px;
+    height: 430px;
+  }
+  .scrollable-content .carousel {
+    height: 430px;
   }
   .scrollable-content .content {
     grid-template-columns: 1fr 1fr;
@@ -12609,10 +12689,10 @@ footer .links-wrapper .links .link:not(:last-child) {
     font-size: 40px;
     line-height: 45px;
     text-align: left;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
   .scrollable-content .content .left .description {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
   .scrollable-content .content .left .description .title {
     font-size: 40px;
@@ -12628,6 +12708,8 @@ footer .links-wrapper .links .link:not(:last-child) {
     display: unset;
     width: unset;
     margin-bottom: unset;
+    margin-left: unset;
+    margin-right: unset;
   }
   .scrollable-content .content .right {
     width: 430px;
@@ -12668,9 +12750,6 @@ footer .links-wrapper .links .link:not(:last-child) {
   }
   .setup-wrapper .setup-item .description-wrapper .description {
     font-size: 18px;
-  }
-  .scrollable-content {
-    max-height: 370px;
   }
   #highlights .title-with-button {
     margin-bottom: 30px;

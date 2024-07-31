@@ -12,12 +12,6 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 40px;
   }
-
-  footer {
-    .links-wrapper {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-  }
 }
 
 @include media-breakpoint-up(lg) {
@@ -96,51 +90,14 @@
   }
 
   footer {
-    grid-template-columns: 1fr 2fr;
-    grid-row-gap: unset;
-
     .address-wrapper {
-      align-items: flex-start;
-      justify-content: space-between;
-      flex-direction: row;
-      order: 1;
-
       .address-details {
-        align-items: flex-start;
-        justify-content: space-between;
-
         .title {
           margin-bottom: 20px;
-          text-align: left;
         }
 
         .address {
-          text-align: left;
-          margin-bottom: 0;
-        }
-
-        .copyright {
-          text-align: left;
-        }
-      }
-
-      .divider {
-        width: 3px;
-        height: 100%;
-        margin-left: 65px;
-        margin-bottom: 0;
-      }
-    }
-
-    .links-wrapper {
-      grid-column-gap: 44px;
-      margin-left: 40px;
-
-      .links {
-        align-items: flex-start;
-
-        .title {
-          margin-bottom: 20px;
+          margin-bottom: 10px;
         }
       }
     }
@@ -284,10 +241,6 @@
         }
       }
     }
-  }
-
-  .scrollable-content {
-    //max-height: 370px;
   }
 
   #highlights {

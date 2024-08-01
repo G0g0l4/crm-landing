@@ -11950,6 +11950,7 @@ header .banner {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
+  margin-bottom: 20px;
 }
 header .banner .left .title {
   font-family: Roboto, serif;

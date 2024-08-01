@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="/dist/css/index.css?v=1.0.2">
+    <link rel="stylesheet" href="/node_modules/aos/dist/aos.css" />
 </head>
 <body>
 <header style="background-image: url('src/icons/background.svg')">
@@ -63,7 +64,7 @@
 </header>
 
 <div class="container">
-    <section id="setup">
+    <section id="setup" data-aos="fade-up">
         <div class="gray-background">
             <div class="main-header-wrapper">
                 <h1 class="main-header text-center">Создайте новый бренд за <span class="green-text">4+ дня *</span>
@@ -127,7 +128,7 @@
         </div>
     </section>
 
-    <section id="highlights">
+    <section id="highlights" data-aos="fade-up">
         <div class="title-with-button main-header-wrapper">
             <h1 class="main-header">
                 <span class="green-text">Комплексное решение</span> для роста <br/> вашего брокерского бизнеса
@@ -269,7 +270,7 @@
         </div>
     </section>
 
-    <section id="instruments">
+    <section id="instruments" data-aos="fade-up">
         <div class="instruments-wrapper">
             <div class="description">
                 <h4 class="title">Более 10000+</h4>
@@ -293,7 +294,7 @@
         </a>
     </section>
 
-    <section id="features">
+    <section id="features" data-aos="fade-up">
         <div class="scrollable-content">
             <div id="features-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                 <div class="carousel-indicators">
@@ -394,7 +395,7 @@
         </div>
     </section>
 
-    <section id="prices">
+    <section id="prices" data-aos="fade-up">
         <div class="prices-wrapper">
             <div class="main-header-wrapper">
                 <h1 class="main-header text-center">Цены</h1>
@@ -498,6 +499,12 @@
     </footer>
 </div>
 
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="/node_modules/aos/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1200
+    });
+</script>
 </body>
 </html>

@@ -12240,14 +12240,14 @@ footer .copyright {
 }
 .setup-wrapper .setup-item .description-wrapper .icon {
   display: block;
-  width: 70px;
-  height: 73px;
-  border-radius: 35px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  width: 45px;
+  height: 50px;
   margin-right: 25px;
   margin-top: -20px;
+}
+.setup-wrapper .setup-item .description-wrapper .icon img {
+  width: 100%;
+  height: 100%;
 }
 .setup-wrapper .setup-item .description-wrapper .description p {
   font-family: Montserrat, serif;
@@ -12626,6 +12626,7 @@ footer .copyright {
   }
   .setup-wrapper .setup-item .description-wrapper .icon {
     margin-right: 40px;
+    width: 60px;
   }
   .setup-wrapper .setup-item .description-wrapper .description {
     font-size: 18px;

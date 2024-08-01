@@ -166,6 +166,10 @@
 }
 
 @include media-breakpoint-up(xl) {
+  .banner {
+    margin: 100px 0;
+  }
+
   .three-columns {
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 40px;

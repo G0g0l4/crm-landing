@@ -11950,7 +11950,6 @@ header .banner {
   display: grid;
   grid-template-columns: 1fr;
   margin-bottom: 20px;
-  min-height: 100vh;
   align-items: flex-start;
 }
 header .banner .left .title {
@@ -12596,6 +12595,9 @@ footer .copyright {
   }
 }
 @media (min-width: 1200px) {
+  .banner {
+    margin: 100px 0;
+  }
   .three-columns {
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 40px;

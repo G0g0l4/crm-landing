@@ -11949,8 +11949,9 @@ header .navbar .links .navbar-nav .button {
 header .banner {
   display: grid;
   grid-template-columns: 1fr;
-  align-items: center;
   margin-bottom: 20px;
+  min-height: 100vh;
+  align-items: flex-start;
 }
 header .banner .left .title {
   font-family: Roboto, serif;
@@ -12492,11 +12493,8 @@ footer .copyright {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 40px;
   }
-  header {
-    margin-bottom: 50px;
-  }
   header .navbar {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
   header .navbar .links .navbar-nav .nav-link:not(:last-child) {
     margin-right: 35px;

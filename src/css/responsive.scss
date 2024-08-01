@@ -45,6 +45,8 @@
     .banner {
       grid-template-columns: 1fr 1fr;
       column-gap: 70px;
+      margin-top: 100px !important;
+      margin-bottom: 100px !important;
 
       .left {
         .title {
@@ -166,11 +168,6 @@
 }
 
 @include media-breakpoint-up(xl) {
-  .banner {
-    margin-top: 100px !important;
-    margin-bottom: 100px !important;
-  }
-
   .three-columns {
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 40px;

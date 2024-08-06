@@ -8,6 +8,7 @@
 
 body {
   scroll-behavior: smooth;
+  background-color: #333333;
 }
 
 section {
@@ -15,7 +16,7 @@ section {
 }
 
 :root {
-  --main-green: #46B9A1;
+  --main-green: #B5E3EA;
   --main-black: #000000;
   --main-gray: #555555;
 }
@@ -92,7 +93,7 @@ header {
           font-size: 18px;
           font-weight: 400;
           text-align: left;
-          color: var(--main-black);
+          color: #FFFFFF;
           transition: all 0.3s;
 
           &.active,
@@ -110,7 +111,7 @@ header {
           font-size: 14px;
           text-align: center;
           text-decoration: none;
-          color: #FFFFFF;
+          color: #333333;
           margin-left: 0;
         }
       }
@@ -128,7 +129,7 @@ header {
         font-family: Roboto, serif;
         font-size: 36px;
         font-weight: 800;
-        color: var(--main-black);
+        color: #FFFFFF;
         margin-bottom: 5px;
         text-align: center;
       }
@@ -139,7 +140,7 @@ header {
         font-weight: 500;
         line-height: 45px;
         text-align: center;
-        color: var(--main-black);
+        color: #FFFFFF;
         margin-bottom: 20px;
       }
 
@@ -149,7 +150,7 @@ header {
         font-weight: 500;
         line-height: 23px;
         text-align: center;
-        color: var(--main-gray);
+        color: #D7D7D7;
         margin-bottom: 35px;
       }
 
@@ -181,7 +182,7 @@ header {
         font-weight: 300;
         line-height: 16px;
         text-align: center;
-        color: #959595;
+        color: #FFFFFF;
       }
     }
   }
@@ -208,7 +209,7 @@ footer {
     font-weight: 500;
     line-height: 18px;
     text-align: center;
-    color: var(--main-gray);
+    color: #FFFFFF;
     margin-bottom: 10px;
   }
 }
@@ -227,6 +228,7 @@ footer {
   margin-bottom: 80px;
   font-size: 25px;
   line-height: 30px;
+  color: #FFFFFF;
 }
 
 .main-button {
@@ -239,7 +241,7 @@ footer {
   line-height: 24px;
   text-align: center;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #555555;
 }
 
 .three-columns {
@@ -256,7 +258,7 @@ footer {
 }
 
 .box {
-  background-color: #FFFFFF;
+  background-color: #444444;
   box-shadow: 0 4px 25px 0 #00000026;
   border-radius: 30px;
   display: block;
@@ -285,7 +287,7 @@ footer {
       font-weight: 300;
       line-height: 23px;
       text-align: left;
-      color: var(--main-black);
+      color: #FFFFFF;
       margin-bottom: 0;
     }
 
@@ -310,7 +312,7 @@ footer {
     line-height: 15px;
     text-align: left;
     margin-bottom: 18px;
-    color: var(--main-gray);
+    color: #FFFFFF;
   }
 
   .list {
@@ -357,8 +359,8 @@ footer {
 
 .secondary-box {
   padding: 45px 29px;
-  background-color: #FFFFFF;
-  box-shadow: 0 4px 25px 0 #00000026;
+  background-color: #444444;
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.1490196078);
   border-radius: 30px;
   display: block;
 
@@ -385,7 +387,7 @@ footer {
       line-height: 30px;
       text-align: left;
       font-family: Roboto, serif;
-      color: var(--main-black);
+      color: #FFFFFF;
       margin-bottom: 0;
     }
   }
@@ -396,7 +398,7 @@ footer {
     font-weight: 500;
     line-height: 18px;
     text-align: left;
-    color: var(--main-gray);
+    color: #959595;
     margin-bottom: 0;
   }
 }
@@ -425,7 +427,7 @@ footer {
       font-family: Roboto, serif;
       font-weight: 600;
       text-align: center;
-      color: #000000;
+      color: #FFFFFF;
       margin-bottom: 25px;
       font-size: 24px;
       line-height: 25px;
@@ -436,7 +438,7 @@ footer {
       width: 100%;
       height: 5px;
       border-radius: 30px;
-      background: linear-gradient(270deg, #45B9A3 0%, rgba(114, 199, 103, 0) 97.28%);
+      background: linear-gradient(270deg, #B5E3EA 0%, rgba(70, 185, 161, 0) 97.28%);
     }
 
     .description-wrapper {
@@ -463,7 +465,7 @@ footer {
           font-weight: 500;
           line-height: 23px;
           text-align: left;
-          color: var(--main-gray);
+          color: #FFFFFF;
 
           &:not(:last-child) {
             margin-bottom: 10px;
@@ -499,7 +501,7 @@ footer {
         font-weight: 700;
         line-height: 30px;
         text-align: left;
-        color: #FFFFFF;
+        color: #333333;
         margin-bottom: 10px;
       }
 
@@ -509,7 +511,7 @@ footer {
         font-weight: 700;
         line-height: 25px;
         text-align: left;
-        color: #FFFFFF;
+        color: #333333;
       }
 
       .instruments {
@@ -525,24 +527,24 @@ footer {
           font-weight: 400;
           line-height: 26px;
           text-align: left;
-          color: #C9D8D5;
+          color: #555555;
           animation: lightUp 2s infinite alternate;
           cursor: pointer;
 
           @keyframes lightUp {
             0% {
-              color: #C9D8D5;
+              color: #555555;
             }
             50% {
-              color: #FFFFFF;
+              color: #333333;
             }
             100% {
-              color: #C9D8D5;
+              color: #555555;
             }
           }
 
           &:not(:last-child) {
-            border-bottom: 1px solid #FFFFFF2E;
+            border-bottom: 1px solid #0000002E;
             padding-bottom: 8px;
           }
 
@@ -616,7 +618,7 @@ footer {
           line-height: 18px;
           text-align: center;
           margin-bottom: 0;
-          column-gap: var(--main-gray);
+          color: #FFFFFF;
         }
       }
 
@@ -711,6 +713,7 @@ footer {
     text-align: center;
     margin-bottom: 0;
     margin-top: 25px;
+    color: #FFFFFF;
   }
 }
 
